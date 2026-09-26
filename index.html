@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PASHYASGPT — Your Personal AI Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background-grid"></div>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#home" class="brand">
+
+            <div class="brand-icon">
+                ✦
+            </div>
+
+            <div class="brand-text">
+
+                <div class="brand-name">
+                    PASHYA<span>SGPT</span>
+                </div>
+
+                <div class="brand-tagline">
+                    Your Personal AI Assistant
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="#home">Home</a>
+            <a href="#features">Capabilities</a>
+            <a href="#about">About</a>
+
+        </nav>
+
+
+        <div class="system-status">
+
+            <span class="status-dot"></span>
+
+            <span>SYSTEM ONLINE</span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span>✦</span>
+                    INTELLIGENT AI ASSISTANT
+                </div>
+
+
+                <h1>
+
+                    Ask anything.<br>
+
+                    <span>Think beyond.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Meet <strong>PASHYASGPT</strong> — a personal AI assistant
+                    designed to help you learn, create, explore ideas,
+                    solve problems and discover new possibilities.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="#ask" class="primary-action">
+                        <span>✦</span>
+                        START ASKING
+                    </a>
+
+                    <a href="#about" class="secondary-action">
+                        ABOUT PASHYASGPT
+                    </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong>AI</strong>
+                        <span>Powered Intelligence</span>
+
+                    </div>
+
+                    <div class="stat-line"></div>
+
+                    <div class="hero-stat">
+
+                        <strong>24/7</strong>
+                        <span>Available Assistance</span>
+
+                    </div>
+
+                    <div class="stat-line"></div>
+
+                    <div class="hero-stat">
+
+                        <strong>∞</strong>
+                        <span>Ideas & Questions</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI Orb -->
+
+            <div class="hero-visual">
+
+                <div class="orb-ring ring-one"></div>
+                <div class="orb-ring ring-two"></div>
+                <div class="orb-ring ring-three"></div>
+
+                <div class="ai-orb">
+
+                    <div class="orb-glow"></div>
+
+                    <div class="orb-core">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-top">
+
+                    <span class="mini-dot"></span>
+
+                    AI ENGINE
+
+                    <strong>ACTIVE</strong>
+
+                </div>
+
+
+                <div class="floating-card card-bottom">
+
+                    <span>✦</span>
+
+                    <div>
+                        <small>RESPONSE SYSTEM</small>
+                        <strong>READY</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= AI ASK SECTION ================= -->
+
+        <section class="ask-section" id="ask">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    ASK PASHYASGPT
+                </div>
+
+                <h2>
+                    Your question.
+                    <span>Our intelligence.</span>
+                </h2>
+
+                <p>
+                    Ask questions about technology, education, coding,
+                    science, ideas, general knowledge and much more.
+                </p>
+
+            </div>
+
+
+            <div class="input-card">
+
+                <div class="input-card-header">
+
+                    <div class="input-title">
+
+                        <span class="input-icon">✦</span>
+
+                        <div>
+
+                            <strong>
+                                ASK YOUR AI
+                            </strong>
+
+                            <small>
+                                PASHYASGPT INTELLIGENCE ENGINE
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="shortcut">
+                        CTRL + ENTER
+                    </div>
+
+                </div>
+
+
+                <textarea
+                    id="question"
+                    placeholder="What would you like to know?"
+                    rows="6"
+                ></textarea>
+
+
+                <div class="input-card-footer">
+
+                    <span class="input-hint">
+                        Ask anything in English
+                    </span>
+
+
+                    <button id="askButton">
+
+                        <span>✦</span>
+
+                        ASK AI
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI Response -->
+
+            <div class="response-card">
+
+                <div class="response-header">
+
+                    <div>
+
+                        <span class="response-label">
+                            AI RESPONSE
+                        </span>
+
+                        <h3>
+                            PASHYASGPT
+                        </h3>
+
+                    </div>
+
+
+                    <div class="response-status">
+
+                        <span class="status-dot"></span>
+
+                        READY
+
+                    </div>
+
+                </div>
+
+
+                <div id="answer" class="answer">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            ◈
+                        </div>
+
+                        <h4>
+                            Your AI response will appear here.
+                        </h4>
+
+                        <p>
+                            Ask a question above to begin your conversation
+                            with PASHYASGPT.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CAPABILITIES ================= -->
+
+        <section class="features-section" id="features">
+
+            <div class="section-heading">
+
+                <div class="section-label">
+                    CAPABILITIES
+                </div>
+
+                <h2>
+                    Built for
+                    <span>curiosity.</span>
+                </h2>
+
+                <p>
+                    PASHYASGPT can assist across different areas of
+                    learning, technology and everyday problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        01
+                    </div>
+
+                    <div class="feature-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Learn & Understand
+                    </h3>
+
+                    <p>
+                        Get simple explanations for complex concepts,
+                        academic topics and general knowledge.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        02
+                    </div>
+
+                    <div class="feature-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Coding & Technology
+                    </h3>
+
+                    <p>
+                        Explore programming, debugging, technical concepts,
+                        projects and software development ideas.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        03
+                    </div>
+
+                    <div class="feature-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Ideas & Creativity
+                    </h3>
+
+                    <p>
+                        Brainstorm ideas, create content, plan projects
+                        and turn concepts into practical solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        04
+                    </div>
+
+                    <div class="feature-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        Everyday Assistance
+                    </h3>
+
+                    <p>
+                        Ask questions, solve problems and get useful
+                        information whenever you need it.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT FOUNDER ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-container">
+
+
+                <!-- Founder Profile -->
+
+                <div class="founder-profile">
+
+                    <div class="profile-label">
+                        FOUNDER PROFILE
+                    </div>
+
+
+                    <div class="founder-symbol">
+                        PS
+                    </div>
+
+
+                    <h2>
+                        Prasad<br>
+                        Sunil Salwe
+                    </h2>
+
+
+                    <div class="founder-role">
+                        FOUNDER & CREATOR — PASHYASGPT
+                    </div>
+
+
+                    <div class="profile-line"></div>
+
+
+                    <div class="profile-intro">
+
+                        Building technology with curiosity,
+                        creativity and a vision for accessible AI.
+
+                    </div>
+
+
+                    <div class="profile-tags">
+
+                        <span>AI</span>
+                        <span>PYTHON</span>
+                        <span>ML</span>
+                        <span>ROBOTICS</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- About Content -->
+
+                <div class="about-content">
+
+                    <div class="section-label">
+                        ABOUT THE FOUNDER
+                    </div>
+
+
+                    <h2>
+                        The person behind
+                        <span>PASHYASGPT.</span>
+                    </h2>
+
+
+                    <p>
+
+                        Prasad Sunil Salwe is a B.E. Electronics &
+                        Telecommunication Engineering student and the
+                        creator of PASHYASGPT. His interests include
+                        Artificial Intelligence, Generative AI, Python,
+                        Machine Learning, embedded systems, robotics,
+                        cybersecurity and innovative technology solutions.
+
+                    </p>
+
+
+                    <p>
+
+                        He is pursuing his engineering degree from
+                        <strong>
+                            Ajeenkya D Y Patil School of Engineering,
+                            Lohegaon
+                        </strong>,
+                        in Electronics & Telecommunication Engineering
+                        (E&TC), with an
+                        <strong>
+                            Honours in Robotics
+                        </strong>.
+
+                    </p>
+
+
+                    <p>
+
+                        He is also a member of
+                        <strong>
+                            IETE — The Institution of Electronics and
+                            Telecommunication Engineers
+                        </strong>,
+                        and has explored areas including Data Analytics,
+                        Generative AI, Python & Machine Learning,
+                        Cyber Security and Ethical Hacking.
+
+                    </p>
+
+
+                    <p>
+
+                        PASHYASGPT is one of his technology projects,
+                        created with the vision of making AI-powered
+                        assistance simple, useful and accessible for
+                        everyday users.
+
+                    </p>
+
+
+
+                    <!-- Information Cards -->
+
+                    <div class="about-cards">
+
+
+                        <div class="about-card">
+
+                            <small>
+                                DEGREE
+                            </small>
+
+                            <strong>
+                                B.E. Electronics & Telecommunication
+                                Engineering
+                            </strong>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <small>
+                                INSTITUTE
+                            </small>
+
+                            <strong>
+                                Ajeenkya D Y Patil School of Engineering,
+                                Lohegaon
+                            </strong>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <small>
+                                HONOURS
+                            </small>
+
+                            <strong>
+                                Honours in Robotics
+                            </strong>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <small>
+                                PROFESSIONAL MEMBERSHIP
+                            </small>
+
+                            <strong>
+                                IETE — The Institution of Electronics
+                                and Telecommunication Engineers
+                            </strong>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <small>
+                                TRAINING
+                            </small>
+
+                            <strong>
+                                Data Analytics Training — Oracle University
+                            </strong>
+
+                        </div>
+
+
+                        <div class="about-card">
+
+                            <small>
+                                SPECIALIZATION
+                            </small>
+
+                            <strong>
+                                Generative Artificial Intelligence
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= VISION ================= -->
+
+        <section class="vision-section">
+
+            <div class="vision-card">
+
+                <div class="vision-label">
+                    THE VISION
+                </div>
+
+                <h2>
+                    Technology should feel
+                    <span>simple.</span>
+                </h2>
+
+                <p>
+                    PASHYASGPT is built around a simple idea:
+                    make intelligent technology easier to access,
+                    understand and use.
+                </p>
+
+                <div class="vision-line"></div>
+
+                <span class="vision-signature">
+                    — Prasad Sunil Salwe
+                </span>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+
+            <strong>
+                PASHYA<span>SGPT</span>
+            </strong>
+
+            <p>
+                Your Personal AI Assistant
+            </p>
+
+        </div>
+
+
+        <div class="footer-center">
+
+            <span>
+                Built with curiosity & technology
+            </span>
+
+        </div>
+
+
+        <div class="footer-right">
+
+            <span class="status-dot"></span>
+
+            SYSTEM ONLINE
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 PASHYASGPT · Created by Prasad Sunil Salwe
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
