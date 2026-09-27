@@ -2089,3 +2089,364 @@ main {
     }
 
 }
+/* =========================================================
+   PASHYASGPT — FINAL MOBILE OPTIMIZATION
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    .header {
+        width: 100%;
+        min-width: 0;
+        padding: 0 14px;
+        gap: 10px;
+    }
+
+    .brand {
+        min-width: 0;
+        gap: 8px;
+    }
+
+    .brand-icon {
+        flex: 0 0 34px;
+    }
+
+    .brand-name {
+        white-space: nowrap;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .brand-tagline {
+        white-space: nowrap;
+        font-size: 6px;
+        letter-spacing: 1.2px;
+    }
+
+    .system-status {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 7px 9px;
+        font-size: 7px;
+    }
+
+    /* HERO */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(40px, 13vw, 52px);
+        line-height: 1;
+        word-break: normal;
+    }
+
+    .hero-description {
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .hero-stats {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-stat {
+        min-width: 0;
+        text-align: center;
+    }
+
+    .hero-stat strong {
+        font-size: 16px;
+    }
+
+    /* AI ORB */
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        min-height: 300px;
+        overflow: hidden;
+    }
+
+    .floating-card {
+        max-width: 145px;
+        padding: 9px 11px;
+        font-size: 8px;
+    }
+
+    .card-top {
+        right: 2px;
+        top: 45px;
+    }
+
+    .card-bottom {
+        left: 2px;
+        bottom: 45px;
+    }
+
+    /* SECTIONS */
+    .ask-section,
+    .features-section,
+    .about-section,
+    .vision-section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .section-heading {
+        width: 100%;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .vision-card h2 {
+        font-size: clamp(30px, 9vw, 38px);
+        word-break: normal;
+    }
+
+    /* ASK CARD */
+    .input-card,
+    .response-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input-card {
+        padding: 14px;
+    }
+
+    .input-card-header {
+        gap: 10px;
+    }
+
+    .input-title {
+        min-width: 0;
+    }
+
+    .input-title strong,
+    .input-title small {
+        white-space: nowrap;
+    }
+
+    #question {
+        width: 100%;
+        min-height: 140px;
+        max-height: 45vh;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .input-card-footer {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .input-hint {
+        flex: 1 1 100%;
+    }
+
+    #askButton {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+    }
+
+    /* RESPONSE */
+    .response-header {
+        padding: 18px 16px;
+        gap: 12px;
+    }
+
+    .response-status {
+        white-space: nowrap;
+    }
+
+    .answer {
+        width: 100%;
+        min-height: 180px;
+        padding: 20px 16px;
+        font-size: 14px;
+        line-height: 1.75;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    /* FEATURES */
+    .feature-grid {
+        width: 100%;
+    }
+
+    .feature-card {
+        width: 100%;
+        min-height: 220px;
+        padding: 23px;
+    }
+
+    /* ABOUT */
+    .about-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 22px 17px;
+    }
+
+    .founder-profile {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .founder-profile h2 {
+        font-size: clamp(32px, 10vw, 40px);
+        overflow-wrap: anywhere;
+    }
+
+    .profile-intro {
+        max-width: 100%;
+    }
+
+    .about-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-content > p {
+        overflow-wrap: anywhere;
+    }
+
+    .about-card {
+        min-width: 0;
+    }
+
+    .about-card strong {
+        overflow-wrap: anywhere;
+    }
+
+    /* VISION */
+    .vision-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 50px 18px;
+    }
+
+    .vision-card p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-brand,
+    .footer-center,
+    .footer-right {
+        min-width: 0;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .brand-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+    }
+
+    .brand-name {
+        font-size: 11px;
+    }
+
+    .brand-tagline {
+        font-size: 5px;
+    }
+
+    .system-status {
+        padding: 6px 7px;
+        font-size: 6px;
+    }
+
+    .hero {
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-stats {
+        gap: 7px;
+    }
+
+    .hero-stat strong {
+        font-size: 14px;
+    }
+
+    .hero-stat span {
+        font-size: 6px;
+    }
+
+    .ai-orb {
+        width: 165px;
+        height: 165px;
+    }
+
+    .orb-core {
+        width: 68px;
+        height: 68px;
+        font-size: 24px;
+    }
+
+    .ring-one {
+        width: 215px;
+        height: 215px;
+    }
+
+    .ring-two {
+        width: 260px;
+        height: 260px;
+    }
+
+    .ring-three {
+        width: 300px;
+        height: 300px;
+    }
+
+    .floating-card {
+        transform: scale(0.72);
+    }
+}
